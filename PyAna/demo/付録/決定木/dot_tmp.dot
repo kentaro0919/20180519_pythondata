@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=IPAGothic] ;
+edge [fontname=IPAGothic] ;
+0 [label=<平均通話時間 ≦ 267.85<br/>gini = 0.6982<br/>samples = 461<br/>value = [45, 111, 193, 112]<br/>class = C>, fillcolor="#399de53b"] ;
+1 [label=<平均待ち時間 ≦ 58.25<br/>gini = 0.3942<br/>samples = 141<br/>value = [1, 1, 35, 104]<br/>class = D>, fillcolor="#d739e5a6"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<gini = 0.5088<br/>samples = 25<br/>value = [1, 1, 16, 7]<br/>class = C>, fillcolor="#399de580"] ;
+1 -> 2 ;
+3 [label=<gini = 0.2739<br/>samples = 116<br/>value = [0, 0, 19, 97]<br/>class = D>, fillcolor="#d739e5cd"] ;
+1 -> 3 ;
+4 [label=<平均通話時間 ≦ 637.55<br/>gini = 0.6185<br/>samples = 320<br/>value = [44, 110, 158, 8]<br/>class = C>, fillcolor="#399de53a"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label=<gini = 0.3996<br/>samples = 208<br/>value = [0, 47, 154, 7]<br/>class = C>, fillcolor="#399de5a9"] ;
+4 -> 5 ;
+6 [label=<gini = 0.5279<br/>samples = 112<br/>value = [44, 63, 4, 1]<br/>class = B>, fillcolor="#47e53947"] ;
+4 -> 6 ;
+}
